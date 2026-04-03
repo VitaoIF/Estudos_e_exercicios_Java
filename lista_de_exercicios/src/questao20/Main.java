@@ -2,9 +2,7 @@ package questao20;
 
 import questao20.entities.Reserva;
 
-import java.time.Instant;
 import java.time.LocalDate;
-import java.time.chrono.ChronoLocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
@@ -32,7 +30,7 @@ public class Main {
         }
         else {
             Reserva reserva = new Reserva(checkIn, checkOut, numero);
-            System.out.println("Reserva: "+ reserva.toString());
+            System.out.println("Reserva: "+ reserva);
 
             System.out.println();
             System.out.println("Entre com os dados para atualizar a reserva: ");
@@ -54,7 +52,7 @@ public class Main {
             }
             else {
                 reserva.atualizarDatas(checkIn, checkOut);
-                System.out.println("Reserva: "+ reserva.toString());
+                System.out.println("Reserva: "+ reserva);
             }
 
         }
